@@ -1,0 +1,47 @@
+# ===== 编译产物 =====
+build/
+Debug/
+Release/
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.su
+
+# ===== IDE / 工程文件 =====
+.vscode/
+.idea/
+*.uvprojx
+*.uvoptx
+*.uvguix.*
+*.ioc
+*.mxproject
+JLinkLog.txt
+JLinkSettings.ini
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# ===== 日志 / 临时文件 =====
+*.log
+*.tmp
+*.bak
+*~
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 敏感信息（绝对不要提交）=====
+*.pem
+*.key
+.env
+secrets.h
