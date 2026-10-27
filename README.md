@@ -24,7 +24,7 @@
 | 部件 | 型号 | 备注 |
 |---|---|---|
 | 主控 | STM32F407 | 待实验室确认 |
-| 电机 | 待确认 | |
+| 电机 | RobStride RS04 | 120 Nm / 15 rad/s / CAN 1 Mbps |
 | USB-CAN | 待确认 | |
 | 逻辑分析仪 | 待确认 | |
 
@@ -47,6 +47,16 @@ cd can-motor-kit
 ```
 
 （编译与运行步骤待补充）
+
+**先跑上位机 demo（Linux + SocketCAN）**
+
+```bash
+sudo ip link set can0 up type can bitrate 1000000
+pip install python-can
+python host/robstride.py --interface socketcan --channel can0 --id 1
+```
+
+协议细节（CAN ID 结构、MIT 帧编码、参数读写）见 [docs/CAN协议.md](docs/CAN协议.md)。
 
 ## 性能指标
 
