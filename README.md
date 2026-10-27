@@ -24,7 +24,7 @@
 | 部件 | 型号 | 备注 |
 |---|---|---|
 | 主控 | STM32F407 | 待实验室确认 |
-| 电机 | RobStride RS04 | 120 Nm / 15 rad/s / CAN 1 Mbps |
+| 电机 | RobStride RS04 | 48V / 40Nm 额定 / 120Nm 峰值 / 9:1 / CAN 1Mbps |
 | USB-CAN | 待确认 | |
 | 逻辑分析仪 | 待确认 | |
 
